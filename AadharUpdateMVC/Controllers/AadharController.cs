@@ -58,16 +58,22 @@ namespace AadharUpdateMVC.Controllers
 
         }
 
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
-                var response = await _httpClient.DeleteAsync($"/{id}");
-                response.EnsureSuccessStatusCode();
+                var response = await _httpClient.DeleteAsync($"Aadhar/{id}");
+
+
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    ViewBag.Error = "Error deleting Aadhar details. Please try again.";
+                }
 
                 return RedirectToAction("Index");
             }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
             {
                 ViewBag.Error = "Error deleting Aadhar details. Please try again.";
                 return RedirectToAction("Index");

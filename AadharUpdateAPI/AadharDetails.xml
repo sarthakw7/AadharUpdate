@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfAadharDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <AadharDetails>
-	<Id>1</Id>
+    <Id>1</Id>
     <Name>raj</Name>
     <AadharNumber>456734563489</AadharNumber>
     <MobileNumber>+91 8967584756</MobileNumber>
@@ -10,21 +10,30 @@
     <Address>hyd</Address>
   </AadharDetails>
   <AadharDetails>
-	  <Id>2</Id>
-    <Name>shyam</Name>
-    <AadharNumber>456734563489</AadharNumber>
-    <MobileNumber>+91 9967584756</MobileNumber>
-    <DateOfBirth>13/07/1992</DateOfBirth>
-    <Email>shyam@gmail.com</Email>
-    <Address>pune</Address>
+    <Id>4</Id>
+    <Name>diya</Name>
+    <AadharNumber>456783657839</AadharNumber>
+    <MobileNumber>6785936578</MobileNumber>
+    <DateOfBirth>8/9/1993</DateOfBirth>
+    <Email>diya@mail.com</Email>
+    <Address>delhi</Address>
   </AadharDetails>
   <AadharDetails>
-	  <Id>3</Id>
-    <Name>karan</Name>
+    <Id>5</Id>
+    <Name>sneha</Name>
     <AadharNumber>123456789012</AadharNumber>
     <MobileNumber>6583878937</MobileNumber>
-    <DateOfBirth>2025-02-07</DateOfBirth>
+    <DateOfBirth>2025-02-14</DateOfBirth>
     <Email>karan123@gmail.com</Email>
-    <Address>jalna</Address>
+    <Address>kalal</Address>
+  </AadharDetails>
+  <AadharDetails>
+    <Id>6</Id>
+    <Name>kskj</Name>
+    <AadharNumber>123456789012</AadharNumber>
+    <MobileNumber>6583878937</MobileNumber>
+    <DateOfBirth>2025-02-05</DateOfBirth>
+    <Email>karan123@gmail.com</Email>
+    <Address>kksjks</Address>
   </AadharDetails>
 </ArrayOfAadharDetails>

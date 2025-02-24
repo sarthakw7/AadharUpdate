@@ -11,6 +11,8 @@
         </div>
         <div class="card-body">
             <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" /> <!-- Hidden Id field -->
+
                 <div class="mb-3">
                     <label asp-for="Name" class="form-label">Full Name</label>
                     <input asp-for="Name" class="form-control" required />
@@ -23,7 +25,7 @@
 
                 <div class="mb-3">
                     <label asp-for="MobileNumber" class="form-label">Mobile Number</label>
-                    <input asp-for="MobileNumber" class="form-control" required />
+                    <input asp-for="MobileNumber" class="form-control" required pattern="\d{10}" title="Mobile number must be 10 digits" />
                 </div>
 
                 <div class="mb-3">

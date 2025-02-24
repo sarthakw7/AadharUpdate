@@ -11,6 +11,8 @@
         </div>
         <div class="card-body">
             <form asp-action="Create" method="post">
+                <input type="hidden" asp-for="Id" /> <!-- Hidden Id field -->
+
                 <div class="mb-3">
                     <label asp-for="Name" class="form-label">Full Name</label>
                     <input asp-for="Name" class="form-control" placeholder="Enter full name" required />
@@ -60,4 +62,3 @@
         font-weight: 600;
     }
 </style>
-
