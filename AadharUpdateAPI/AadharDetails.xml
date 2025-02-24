@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAadharDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AadharDetails>
+	<Id>1</Id>
+    <Name>raj</Name>
+    <AadharNumber>456734563489</AadharNumber>
+    <MobileNumber>+91 8967584756</MobileNumber>
+    <DateOfBirth>03/04/2002</DateOfBirth>
+    <Email>raj@gmail.com</Email>
+    <Address>hyd</Address>
+  </AadharDetails>
+  <AadharDetails>
+	  <Id>2</Id>
+    <Name>shyam</Name>
+    <AadharNumber>456734563489</AadharNumber>
+    <MobileNumber>+91 9967584756</MobileNumber>
+    <DateOfBirth>13/07/1992</DateOfBirth>
+    <Email>shyam@gmail.com</Email>
+    <Address>pune</Address>
+  </AadharDetails>
+  <AadharDetails>
+	  <Id>3</Id>
+    <Name>karan</Name>
+    <AadharNumber>123456789012</AadharNumber>
+    <MobileNumber>6583878937</MobileNumber>
+    <DateOfBirth>2025-02-07</DateOfBirth>
+    <Email>karan123@gmail.com</Email>
+    <Address>jalna</Address>
+  </AadharDetails>
+</ArrayOfAadharDetails>

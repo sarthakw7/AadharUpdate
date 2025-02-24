@@ -1,0 +1,48 @@
+﻿@model List<AadharDetailsViewModel>
+
+@{
+    ViewBag.Title = "Aadhar Details";
+}
+
+<div class="container">
+    <h2 class="text-center mb-4">Aadhar Details</h2>
+
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Name</th>
+                        <th>Aadhar Number</th>
+                        <th>Mobile Number</th>
+                        <th>Address</th>
+                        <th>Date of Birth</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@item.AadharNumber</td>
+                            <td>@item.MobileNumber</td>
+                            <td>@item.Address</td>
+                            <td>@item.DateOfBirth</td>
+                            <td>@item.Email</td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.AadharNumber" class="btn btn-sm btn-warning">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.AadharNumber" class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-action="Create" class="btn btn-success btn-lg">Add New</a>
+    </div>
+</div>

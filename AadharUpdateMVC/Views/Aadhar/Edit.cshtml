@@ -1,0 +1,62 @@
+﻿@model AadharDetailsViewModel
+
+@{
+    ViewData["Title"] = "Edit Aadhar Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-warning text-white text-center">
+            <h4 class="mb-0">Edit Aadhar Details</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Full Name</label>
+                    <input asp-for="Name" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="AadharNumber" class="form-label">Aadhar Number</label>
+                    <input asp-for="AadharNumber" class="form-control" readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="MobileNumber" class="form-label">Mobile Number</label>
+                    <input asp-for="MobileNumber" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DateOfBirth" class="form-label">Date of Birth</label>
+                    <input asp-for="DateOfBirth" type="date" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" type="email" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Address" class="form-label">Address</label>
+                    <textarea asp-for="Address" class="form-control" rows="3" required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning px-4">Update</button>
+                    <a asp-action="Index" class="btn btn-secondary px-4">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+</style>
